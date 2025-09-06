@@ -1,0 +1,46 @@
+Below are two files. Create them in the same folder. Replace placeholder text and `profile.jpg` with your own image.
+
+---
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Card - Your Name</title>
+
+    <!-- Professional, readable font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <article class="card" role="region" aria-label="Business card">
+        <img class="card__avatar" src="profile.jpg" alt="Headshot of Your Name" />
+
+        <h1 class="card__name">Your Name</h1>
+        <p class="card__title">Professional Title</p>
+
+        <p class="card__bio">
+          Short bio goes here. Keep it 1–2 lines: what you do, who you help,
+          and the value you bring.
+        </p>
+
+        <nav class="card__links" aria-label="Social links">
+          <a class="card__link" href="https://linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="card__link" href="https://github.com/username" target="_blank" rel="noopener">GitHub</a>
+          <a class="card__link" href="mailto:you@example.com">Email</a>
+        </nav>
+      </article>
+    </main>
+  </body>
+</html>
+```
+
