@@ -1,0 +1,95 @@
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Glassmorphic card */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+/* Typography */
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Toggle Button */
+#theme-toggle {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #0078d4, #00b4db);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 120, 212, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #005a9e, #0093c4);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background: rgba(45, 45, 45, 0.4);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .name,
+.dark-mode .title {
+  color: #ffffff;
+}
+
+.dark-mode .bio {
+  color: #dddddd;
+}
+
+.dark-mode #theme-toggle {
+  background: linear-gradient(135deg, #ff8c00, #ff5e62);
+  box-shadow: 0 8px 16px rgba(255, 94, 98, 0.3);
+}
+
+.dark-mode #theme-toggle:hover {
+  background: linear-gradient(135deg, #e65c00, #ff5e62);
+}
